@@ -33,6 +33,16 @@ function calculateCalories() {
   var carbCals = (dailyCalories * (carbRatio/100));
   var fatCals = (dailyCalories * (fatRatio/100));
   var proteinCals = (dailyCalories * (proteinRatio/100));
+  
+  //round results to two decimal places
+  carbCals = Math.round(carbCals * 100) / 100;
+  fatCals = Math.round(fatCals * 100) / 100;
+  proteinCals = Math.round(proteinCals * 100) / 100;
+    
+  // //Make sure display results on show two decimal places
+  carbCals = carbCals.toFixed(2);
+  fatCals = fatCals.toFixed(2);
+  proteinCals = proteinCals.toFixed(2);
    
   //Display the results to the user
   document.getElementById("totalCalories").style.display = "block";
@@ -69,15 +79,30 @@ document.getElementById("totalCalories").style.display = "none";
 	   alert("Make sure your daily precentages equal 100%");
 	  return;
   }
- 
+  
   //Calculate Daily Grams
   var carbCals = (dailyCalories * (carbRatio/100));
   var fatCals = (dailyCalories * (fatRatio/100));
   var proteinCals = (dailyCalories * (proteinRatio/100));
-  
+ 
+  //round result to two decimal places
+  carbCals = Math.round(carbCals * 100) / 100;
+  fatCals = Math.round(fatCals * 100) / 100;
+  proteinCals = Math.round(proteinCals * 100) / 100;
+ 
   var carbGrams = (carbCals / 4);
   var fatGrams =  (fatCals / 9);
   var proteinGrams = (proteinCals / 4);
+
+  //round result to two decimal places
+  carbGrams = Math.round(carbGrams * 100) / 100;
+  fatGrams = Math.round(fatGrams * 100) / 100;
+  proteinGrams = Math.round(proteinGrams * 100) / 100;
+    
+  //Make sure display results on show two decimal places
+  carbGrams = carbGrams.toFixed(2);
+  fatGrams = fatGrams.toFixed(2);
+  proteinGrams = proteinGrams.toFixed(2);
   
   
   //Display the results to the user
