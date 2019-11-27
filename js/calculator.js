@@ -76,7 +76,7 @@ document.getElementById("totalCalories").style.display = "none";
   var proteinCals = (dailyCalories * (proteinRatio/100));
   
   var carbGrams = (carbCals / 4);
-  var fatGrams =  (fatCals / 4);
+  var fatGrams =  (fatCals / 9);
   var proteinGrams = (proteinCals / 4);
   
   
