@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Final Project</title>
+  <meta name="description" content="Final Project">
+  <meta name="author" content="Brian Nugen">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <div id="widget">
+	<h1>Keto Calculator</h1>	
+  <div id="calculator">
+    <form>
+      <p>Set your daily Calorie intake (do not go under 1200)
+        <p>Calories <input id="dailyCalories" type="number" placeholder="Daily Calories">
+	  <p>Daily percentage of Carbohydrates?
+		<p>Carbs    <input id="carbRatio" type="number" placeholder="Daily % of Carbs">
+	  <p>Daily percentage of Fat?
+		<p>Fat      <input id="fatRatio" type="number" placeholder="Daily % of Fat">
+	<p>Daily percentage of Protein?
+		<p>Protein  <input id="proteinRatio" type="number" placeholder="Daily % of Protein">
+    <p>The total of Carbs + Fat + Protein should = 100
+	</form>
+    <div id="inputButtons">
+	<button type="button" id="calorieCalculate">Show Daily Calorie Allowance</button>
+	<button type="button" id="gramCalculate">Show Daily Portions in Grams</button>
+	</div>
+  <div id="totalCalories">
+    <p>
+	Calories From Carbohydrates <span id="carbCals"></span>
+	<p>
+    Calories From Fat <span id="fatCals"></span>
+	<p>
+	Calories From Protein <span id="proteinCals"></span>
+  </div>
+  <div id="totalGrams">
+    <p>
+	Grams of Carbs <span id="carbGrams"></span>
+	<p>
+    Grams of Fat <span id="fatGrams"></span>
+	<p>
+	Grams of Protein <span id="proteinGrams"></span>
+  </div>
+ </div>
+
+ <script src="js/calculator.js"></script>
+ 
+</body>
+</html>
+
+
