@@ -85,11 +85,6 @@ button:active {
   text-transform: uppercase;
 }
 
-#totalCalories sup {
-  font-size: 20px;
-  top: -18px;
-}
-
 #totalCalories small {
   font-size: 20px;
   font-weight: bold;

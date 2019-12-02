@@ -39,7 +39,7 @@ function calculateCalories() {
   fatCals = Math.round(fatCals * 100) / 100;
   proteinCals = Math.round(proteinCals * 100) / 100;
     
-  // //Make sure display results on show two decimal places
+  // //Make sure display results only show two decimal places
   carbCals = carbCals.toFixed(2);
   fatCals = fatCals.toFixed(2);
   proteinCals = proteinCals.toFixed(2);
@@ -99,7 +99,7 @@ document.getElementById("totalCalories").style.display = "none";
   fatGrams = Math.round(fatGrams * 100) / 100;
   proteinGrams = Math.round(proteinGrams * 100) / 100;
     
-  //Make sure display results on show two decimal places
+  //Make sure display results only show two decimal places
   carbGrams = carbGrams.toFixed(2);
   fatGrams = fatGrams.toFixed(2);
   proteinGrams = proteinGrams.toFixed(2);
@@ -113,7 +113,7 @@ document.getElementById("totalCalories").style.display = "none";
 
 }
 
-//Hide the results on page load
+//Hide the results of both functions on page load
 document.getElementById("totalCalories").style.display = "none";
 document.getElementById("totalGrams").style.display = "none";
 
